@@ -1,0 +1,193 @@
+<div id="products">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-12">
+        <div class="page_title5">
+          <h3><span><em class="l"></em>Health Packages<em class="r"></em></span></h3>
+        </div>
+       <br><br>
+         <!--<div id="options" class="clearfix">
+          <ul id="filters" class="pagination option-set clearfix" data-option-key="filter">
+            <li><a href="#filter" data-option-value="*" class="selected">All Photos</a></li>
+            <li><a href="#filter" data-option-value=".isotope-filter1">Section 1</a></li>
+            <li><a href="#filter" data-option-value=".isotope-filter2">Section 2</a></li>
+          </ul>
+        </div>-->
+        <!-- #options -->
+
+
+
+<div class="slider1">
+ 
+    <div class=" slide panel panel-success"  *ngFor="let list of packageService.packageList" style="height: 100%">
+      <div class="panel-heading">{{list.packageName}}</div>
+    <div class="panel-body">{{list.packageDetails}}
+      <p>Goal of basic health checkup is to find the hidden disease in your body, prevent it from building and lower its effect on your body<br>
+TARGET AGE – (18 -45) YEARS<br>
+PRICE – 2240/-<br>
+OUR PRICE – 1600/-</p>
+    </div>
+  <div class="panel-footer">
+    <div class="btn btn-orange" (click)="btnClick(list);">Book Package</div>
+  </div>
+  </div>
+
+</div>
+
+
+        <!--<div class="isotope-box">
+          <div id="container" class="clearfix">
+            <ul class="thumbnails" id="isotope-items">
+              <li class="element isotope-filter1">
+                <div class="thumb-isotope">
+                  <div class="thumbnail clearfix">
+                    <a href="images/gallery/gallery01.jpg" rel="prettyPhoto[mix]" title="Photo" class="p">
+                      <figure>
+                        <img src="images/gallery01.jpg" alt=""><em></em>
+                      </figure>
+                      <div class="caption">Phasellus consequat ac ante ornare.</div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="element isotope-filter2">
+                <div class="thumb-isotope">
+                  <div class="thumbnail clearfix">
+                    <a href="images/gallery/gallery02.jpg" rel="prettyPhoto[mix]" title="Photo" class="p">
+                      <figure>
+                        <img src="images/gallery02.jpg" alt=""><em></em>
+                      </figure>
+                      <div class="caption">Phasellus consequat ac ante ornare.</div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="element isotope-filter1">
+                <div class="thumb-isotope">
+                  <div class="thumbnail clearfix">
+                    <a href="images/gallery/gallery03.jpg" rel="prettyPhoto[mix]" title="Photo" class="p">
+                      <figure>
+                        <img src="images/gallery03.jpg" alt=""><em></em>
+                      </figure>
+                      <div class="caption">Phasellus consequat ac ante ornare.</div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="element isotope-filter2">
+                <div class="thumb-isotope">
+                  <div class="thumbnail clearfix">
+                    <a href="images/gallery/gallery04.jpg" rel="prettyPhoto[mix]" title="Photo" class="p">
+                      <figure>
+                        <img src="images/gallery04.jpg" alt=""><em></em>
+                      </figure>
+                      <div class="caption">Phasellus consequat ac ante ornare.</div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="element isotope-filter1">
+                <div class="thumb-isotope">
+                  <div class="thumbnail clearfix">
+                    <a href="images/gallery/gallery05.jpg" rel="prettyPhoto[mix]" title="Photo" class="p">
+                      <figure>
+                        <img src="images/gallery05.jpg" alt=""><em></em>
+                      </figure>
+                      <div class="caption">Phasellus consequat ac ante ornare.</div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="element isotope-filter2">
+                <div class="thumb-isotope">
+                  <div class="thumbnail clearfix">
+                    <a href="images/gallery/gallery06.jpg" rel="prettyPhoto[mix]" title="Photo" class="p">
+                      <figure>
+                        <img src="images/gallery06.jpg" alt=""><em></em>
+                      </figure>
+                      <div class="caption">Phasellus consequat ac ante ornare.</div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="element isotope-filter1">
+                <div class="thumb-isotope">
+                  <div class="thumbnail clearfix">
+                    <a href="images/gallery/gallery07.jpg" rel="prettyPhoto[mix]" title="Photo" class="p">
+                      <figure>
+                        <img src="images/gallery07.jpg" alt=""><em></em>
+                      </figure>
+                      <div class="caption">Phasellus consequat ac ante ornare.</div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="element isotope-filter2">
+                <div class="thumb-isotope">
+                  <div class="thumbnail clearfix">
+                    <a href="images/gallery/gallery08.jpg" rel="prettyPhoto[mix]" title="Photo" class="p">
+                      <figure>
+                        <img src="images/gallery08.jpg" alt=""><em></em>
+                      </figure>
+                      <div class="caption">Phasellus consequat ac ante ornare.</div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="element isotope-filter2">
+                <div class="thumb-isotope">
+                  <div class="thumbnail clearfix">
+                    <a href="images/gallery/gallery03.jpg" rel="prettyPhoto[mix]" title="Photo" class="p">
+                      <figure>
+                        <img src="images/gallery03.jpg" alt=""><em></em>
+                      </figure>
+                      <div class="caption">Phasellus consequat ac ante ornare.</div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="element isotope-filter1">
+                <div class="thumb-isotope">
+                  <div class="thumbnail clearfix">
+                    <a href="images/gallery/gallery04.jpg" rel="prettyPhoto[mix]" title="Photo" class="p">
+                      <figure>
+                        <img src="images/gallery04.jpg" alt=""><em></em>
+                      </figure>
+                      <div class="caption">Phasellus consequat ac ante ornare.</div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="element isotope-filter2">
+                <div class="thumb-isotope">
+                  <div class="thumbnail clearfix">
+                    <a href="images/gallery/gallery01.jpg" rel="prettyPhoto[mix]" title="Photo" class="p">
+                      <figure>
+                        <img src="images/gallery01.jpg" alt=""><em></em>
+                      </figure>
+                      <div class="caption">Phasellus consequat ac ante ornare.</div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="element isotope-filter2">
+                <div class="thumb-isotope">
+                  <div class="thumbnail clearfix">
+                    <a href="images/gallery/gallery02.jpg" rel="prettyPhoto[mix]" title="Photo" class="p">
+                      <figure>
+                        <img src="images/gallery02.jpg" alt=""><em></em>
+                      </figure>
+                      <div class="caption">Phasellus consequat ac ante ornare.</div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>-->
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,152 @@
+<router-outlet></router-outlet>
+<div class="container">
+  <div class="rowme">
+    <div class="col-md-8">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a [routerLink]="['/healthpackages']">Health Packages</a></li>
+        <li class="active">{{packDescr.packageName}}</li>
+      </ol>
+
+      <div class="row" style="margin-bottom: 30px">
+        <div class="col-md-6">
+          <a href=""><img src="images/blog3.jpg" class="image"></a>
+        </div>
+        <div class="col-md-6">
+          <p class="blogtext">{{packDescr.packageName}}</p>
+          <p>Goal of basic health checkup is to find the hidden disease in your body, prevent it from building and lower its
+            effect on your body<br> TARGET AGE – (18 -45) YEARS<br> PRICE – 2240/-<br> OUR PRICE – 1600/-</p>
+          <!--<div class="btn btn-orange" >Book Package</div>-->
+
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Book Package</button>
+
+          <!-- Modal -->
+          <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Book a Package</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label class="control-label col-sm-3" for="usr">Name:</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="usr" placeholder="Enter Name" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3" for="gender">Gender:</label>
+                      <div class="col-sm-9">
+                        <label class="radio-inline"><input type="radio" name="optradio" required>Male</label>
+                        <label class="radio-inline"><input type="radio" name="optradio" required>Female</label>
+                       
+                      </div>
+                      
+                    </div>
+                     <div class="form-group">
+                        <label class="control-label col-sm-3" for="age">Age:</label>
+                     <div class="col-sm-4">
+                      
+                         <input type="number" class="form-control" id="age" placeholder="Enter Age" required>
+                       </div>
+                     </div>
+                     <div class="form-group">
+                      <label class="control-label col-sm-3" for="mob">Mobile Number:</label>
+                      <div class="col-sm-9">
+                        <input type="number" class="form-control" id="mob" placeholder="Enter Mobile Number" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3" for="email">Email:</label>
+                      <div class="col-sm-9">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                      </div>
+                    </div>
+                     
+                     <div class="form-group">
+                      <label class="control-label col-sm-3" for="gender">Package Center:</label>
+                      <div class="col-sm-9">
+                      <select class="form-control"  (change)="onSelect($event.target.value)" id="sel1" name="sel1" required> <!-- use this attr if data should popluate automatically [(ngModel)]="selectedCentre.id" -->
+                        <option value="" selected="selected">--Select--</option>
+                        <option *ngFor="let centre of centres" value= {{centre.id}}>{{centre.name}}</option>
+                      </select>
+                      </div>
+                    </div>
+                      <div class="form-group">
+                      <label class="control-label col-sm-3" for="gender">Package branch:</label>
+                      <div class="col-sm-9">
+                      <select class="form-control"  id="sel2" required>
+                       <option *ngIf='selectedCentre.id == 0' value="">--Select--</option>
+                        <option *ngFor="let branch of branches " value= {{branch.id}}>{{branch.name}}</option>
+                      </select>
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <label class="control-label col-sm-6 text-primary" for="gender">Package Amount: {{packDescr.packageCost}}</label>
+                      <label class="control-label col-sm-3 " for="gender">Total</label>
+                      <div class="col-sm-3">
+                        
+                      <select class="form-control"  (change)="onSelected($event.target.value,packDescr)" id="sel3" name="sel3" required>
+                        <option value="" selected="selected">--Select--</option>
+                        <option  value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                      </div>
+                    </div>
+                      <div class="form-group">
+                      <label class="control-label col-sm-6 text-success" for="pwd" *ngIf="totalAmount != ''">Total Amount: {{totalAmount}}</label>
+                      
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3" for="comment">Comment:</label>
+                       <div class="col-sm-9">
+                      <textarea class="form-control" rows="5" id="comment"></textarea>
+                       </div>
+                    </div>
+                   
+                    <div class="form-group">
+                      <div class="col-sm-offset-6 col-sm-10">
+                        <button type="submit" class="btn btn-primary">Book an appointment</button>
+                      </div>
+                    </div>
+                  </form>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!--<div class="btn btn-orange" (click)="addToCart(packDescr);" *ngIf="!packDescr.cart">Add to Cart</div>
+        <div class="btn btn-orange" (click)="addToCart(packDescr);" *ngIf="packDescr.cart">In Cart</div>-->
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+      <div class="list-group">
+        <a href="#" class="list-group-item active">
+   All Packages
+  </a>
+
+        <a class="list-group-item" *ngFor="let list of packser.packageList" (click)="showPackage(list);" style="cursor: pointer;"> {{list.packageName}} <i class="fa fa-plus-square orangem"></i></a>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+<br>
+<br>
