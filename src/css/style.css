@@ -95,12 +95,12 @@ border-left: 1px;
     border: none;  
 }
 .navbar-undermerabi {
-  background-color: #fff;
+  background-color: #18BC9C;
   cursor: pointer;
   font-size: 1.9em;
   color: #000;
   padding-left: 0px;
-  padding-top: 21px;
+  padding-top: 12px;
   min-height: 100px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -228,7 +228,7 @@ height: 250px;
 .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
     padding-left: 250px;
     font-size: 15px;
-    background-color: #241F1F;
+    background-color: #18BC9C;
     min-height: 71px;
     padding-top: 10px;
 }
@@ -1090,6 +1090,17 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
   line-height: 0;
 }
 
+.aboutClsHeader{
+  background: #18BC9C;
+      
+}
+.aboutClsHeader h2{
+    margin-top: 10px !important;
+}
+.aboutCls{
+  background: #18BC9C;
+  font-size:22px;
+}
 
 
 
