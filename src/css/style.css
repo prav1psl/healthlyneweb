@@ -95,7 +95,7 @@ border-left: 1px;
     border: none;  
 }
 .navbar-undermerabi {
-  background-color: #18BC9C;
+  background-color: #fff;
   cursor: pointer;
   font-size: 1.9em;
   color: #000;
@@ -222,19 +222,19 @@ height: 250px;
       
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #fff;
+  color: #2E3092;
 }
 
 .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
     padding-left: 250px;
     font-size: 15px;
-    background-color: #18BC9C;
+    background-color: #fff;
     min-height: 71px;
     padding-top: 10px;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+  background-color: #71BF44;
+  border-color: #71BF44;
     margin-bottom: 0px;
 }
 .navbar-header {
