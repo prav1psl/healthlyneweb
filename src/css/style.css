@@ -11,9 +11,9 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.42857143;
-  color: #333;
+  color: #fff;
   background-color: #fff;
     
 }
@@ -276,7 +276,7 @@ min-height: 71px;
   position: relative;
   width: 100%;
   overflow: hidden;
-  margin-top: 186px;
+  margin-top: 100px;
 }
 .carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
   right: 50%;
@@ -1090,17 +1090,6 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
   line-height: 0;
 }
 
-.aboutClsHeader{
-  background: #18BC9C;
-      
-}
-.aboutClsHeader h2{
-    margin-top: 10px !important;
-}
-.aboutCls{
-  background: #18BC9C;
-  font-size:22px;
-}
 
 
 

@@ -5300,6 +5300,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-body {
   padding: 15px;
+  color:black !important;
 }
 .panel-heading {
   padding: 10px 15px;
@@ -5324,6 +5325,7 @@ a.list-group-item-danger.active:focus {
   color: inherit;
 }
 .panel-footer {
+  color:black !important;
   padding: 10px 15px;
   background-color: #f5f5f5;
   border-top: 1px solid #ddd;

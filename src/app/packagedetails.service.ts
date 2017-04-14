@@ -12,78 +12,85 @@ public totalPackageList:Array<Healthpackage>=[];
 public cartCount: number =0;
 public packageList:Array<Healthpackage>=[ {
       packageId:1,
-      packageName: 'ANEMIA SCREENING TEST',
+      packageName: 'BASIC HEALTH CHECKUP',
       packageDetails: 'Some description which can be filled here for further description',
-      packageCost:500,
+      packageCost:1600,
       cart:false,
       packageCount:1
     },
     {
       packageId:2,
-      packageName: 'CHILD FEVER PACKAGE',
+      packageName: 'MASTER HEALTH CHECKUP',
       packageDetails: 'Some description which can be filled here for further description',
-      packageCost:500,
+      packageCost:3900,
        cart:false,
       packageCount:1
     },
     {
       packageId:3,
-      packageName: 'BASIC HEART CHECKUP',
+      packageName: 'BASIC HEART HEALTH CHECKUP',
       packageDetails: 'Some description which can be filled here for further description',
-      packageCost:500,
+      packageCost:2300,
        cart:false,
       packageCount:1
     },
      {
       packageId:4,
-      packageName: 'BASIC HEALTH CHECKUP',
+      packageName: 'COMPLETE HEART HEALTH CHECKUP',
       packageDetails: 'Some description which can be filled here for further description',
-      packageCost:500,
+      packageCost:10000,
        cart:false,
       packageCount:1
     },
      {
       packageId:5,
-      packageName: 'Health Package5',
+      packageName: 'DIABETIC HEALTH CHECKUP',
       packageDetails: 'Some description which can be filled here for further description',
-      packageCost:500,
+      packageCost:1500,
        cart:false,
       packageCount:1
     },
      {
       packageId:6,
-      packageName: 'Health Package6',
+      packageName: 'PRE DIABEIC HEALTH CHECKUP',
       packageDetails: 'Some description which can be filled here for further description',
-      packageCost:500,
+      packageCost:1000,
        cart:false,
       packageCount:1
     },
      {
       packageId:7,
-      packageName: 'Health Package7',
+      packageName: 'SENIOR HEALTH CHECKUP',
       packageDetails: 'Some description which can be filled here for further description',
-      packageCost:500,
+      packageCost:8900,
        cart:false,
       packageCount:1
     }, {
       packageId:8,
-      packageName: 'Health Package8',
+      packageName: 'THYROID SCREENING TEST',
       packageDetails: 'Some description which can be filled here for further description',
-      packageCost:500,
+      packageCost:1000,
        cart:false,
       packageCount:1
     }, {
       packageId:9,
-      packageName: 'Health Package9',
+      packageName: 'ANEMIA SCREENING TEST',
       packageDetails: 'Some description which can be filled here for further description',
-      packageCost:500,
+      packageCost:2100,
        cart:false,
       packageCount:1
     }, {
       packageId:10,
-      packageName: 'Health Package10',
+      packageName: 'PANCREATIC SCREENING TEST',
       packageDetails: 'Some description which can be filled here for further description',
-      packageCost:500,
+      packageCost:2800,
+       cart:false,
+      packageCount:1
+    }, {
+       packageId:11,
+      packageName: 'LIVER FUNCTION TEST',
+      packageDetails: 'Some description which can be filled here for further description',
+      packageCost:6900,
        cart:false,
       packageCount:1
     }];
