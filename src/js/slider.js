@@ -5,6 +5,6 @@ $(document).ready(function(){
     maxSlides: 3,
     slideMargin: 10,
     auto:true,
-    
+    responsive: true
   });
 });

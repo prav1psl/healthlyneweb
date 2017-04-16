@@ -1,3 +1,7 @@
 .panel-body {
     color: black !important;
+     word-break:break-all;
+}
+.panel-heading{
+     word-break:break-all;
 }

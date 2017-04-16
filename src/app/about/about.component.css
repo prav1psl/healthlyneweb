@@ -1,5 +1,5 @@
 #about{
-     background: #CE5A57;
+     background: rgba(206,90,87,0.7);
 }
 #aboutInfo{
     padding-top: 100px !important;
@@ -13,7 +13,7 @@
     margin-top: 10px !important;
 }
 .aboutCls{
-  background: #CE5A57;
+  background:#CE5A57;
      padding-top: 40px;
 }
 .aboutDescr p{
