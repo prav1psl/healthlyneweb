@@ -1,5 +1,5 @@
 #about{
-     background: rgba(206,90,87,0.7);
+     background: white;
 }
 #aboutInfo{
     padding-top: 100px !important;
@@ -13,11 +13,13 @@
     margin-top: 10px !important;
 }
 .aboutCls{
-  background:#CE5A57;
-     padding-top: 40px;
+   background-image: url('../../images/screen1.jpg');
+     padding-top: 10px;
 }
 .aboutDescr p{
-    padding-top: 10px !important;
+    /*padding-top: 10px !important;*/
+    color: white;
+    
 }
 .home-section {
     padding-top: 70px;
@@ -192,8 +194,36 @@ Pseudo ::after element
     box-sizing: border-box;
 }
 
+.parallax_txt8{
+    font-size: 20px;  color: #fff; font-family: 'Asap'; line-height: 40px;padding-right: 50px;z-index: 10;
+    }
 
+.parallax_txt9{font-size: 46px;  color: #2986e3; font-family: 'Asap'; text-transform: uppercase;text-align: center}
 
+p,h2{
+    color: black;
+    font-family: 'Asap';
+}
+
+.iconDesc{
+   
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.mbr-overlay {
+  background-color:rgba(0,0,0,0.5);
+  bottom: 0;
+  left: 0;
+  /*opacity: 0.5;*/
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1; 
+
+  }
+  .mbr-overlay ~ * {
+    z-index: 2; }
 
 
 
