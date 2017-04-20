@@ -230,7 +230,7 @@ height: 250px;
     font-size: 15px;
     background-color: #fff;
     min-height: 71px;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 .navbar-inverse {
   background-color: #71BF44;
